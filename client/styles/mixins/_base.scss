@@ -20,8 +20,13 @@ button, ol, ul {
   padding: 0;
 }
 
-body {
-  background: rgb(255, 255, 255);
+a:link, a:visited, a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(217, 163, 1);
 }
 
 button {
@@ -31,10 +36,22 @@ button {
   font-size: 1rem;
 }
 
+h1 {
+  font-weight: normal;
+}
+
 html {
-  color: rgb(0, 0, 0);
-  font-family: $helvetica;
-  font-size: 16px;
+  background-color: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
   line-height: $golden;
   -webkit-font-smoothing: antialiased;
+}
+
+.box {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
 }

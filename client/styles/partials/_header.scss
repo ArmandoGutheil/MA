@@ -1,0 +1,51 @@
+.contact {
+  display: block;
+  list-style: none;
+
+  &__item {
+
+  }
+}
+
+.header {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.06);
+  margin: 8.1rem 0;
+  height: 3.36rem;
+
+  &__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.menu {
+  display: block;
+  list-style: none;
+
+  &__item {
+    position: relative;
+    display: inline-block;
+
+    & + & {
+      &::before {
+        position: absolute;
+        top: 0.9rem;
+        bottom: 0.9rem;
+        background-color: rgb(255, 255, 255);
+        content: '';
+        display: block;
+        width: 1px;
+        height: auto;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    line-height: 3.36rem;
+    padding: 0 0.9rem;
+    height: 3.36rem;
+  }
+}
