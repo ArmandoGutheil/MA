@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+. tasks/library
+
+main() {
+  npm install
+}
+
+header
+has npm && main &> $TASK_LOG
+footer
